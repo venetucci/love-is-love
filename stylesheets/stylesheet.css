@@ -4,22 +4,94 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #606c71; }
 
 a {
-  color: #1e6bb8;
+  color: #926af9;
   text-decoration: none; }
   a:hover {
-    text-decoration: underline; }
+    text-decoration: none;
+    background-color: #926af9;
+    color: white; }
 
 .header-content {
   position: absolute;
   right: 0px;
   width: 50%;
   top: 36%;
+
+  -moz-animation-name: headerTransition;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-duration: 0.7s;
+
+  -webkit-animation-name: headerTransition;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 0.7s;
+
+  animation-name: headerTransition;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.7s;
+}
+
+.share {
+
+}
+
+.share a {
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  width: 115px;
+  padding: 25px 10px 10px;
+  top: -80px;
+  position: absolute;
+  right: 6%;
+  border-radius: 0 0 8px 8px;
+
+  -moz-animation-name: shareTransition;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-duration: 0.4s;
+  -moz-animation-delay: 1s;
+  -moz-animation-fill-mode: forwards;
+
+
+  -webkit-animation-name: shareTransition;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 0.4s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+
+  animation-name: shareTransition;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.4s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+
+}
+
+.share a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.share-tweet {
+  display: inline-block;
+  height: 20px;
+  padding-right: 4px;
+}
+
+.share-tweet a:hover {
+  background-color: none;
 }
 
 .btn {
@@ -61,41 +133,182 @@ a {
 .card-1 {
   left: 0px;
   top: 120px;
+
+  -moz-animation-name: transitionCard-1;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-duration: 0.7s;
+
+  -webkit-animation-name: transitionCard-1;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 0.7s;
+
+  animation-name: transitionCard-1;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.7s;
+
 }
 
 .card-2 {
   left: 0px;
   top: 519px;
+
+  -moz-animation-name: transitionCard-2;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-duration: 0.75s;
+
+  -webkit-animation-name: transitionCard-2;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 0.75s;
+
+  animation-name: transitionCard-2;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.75s;
 }
 
 .card-3 {
   left: 0px;
   top: 918px;
+
+  -moz-animation-name: transitionCard-3;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-duration: 0.75s;
+
+  -webkit-animation-name: transitionCard-3;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 0.75s;
+
+  animation-name: transitionCard-3;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.75s;
 }
 
 .card-4 {
   left: 231px;
-  top: 0px;
+  top: -250px;
+
+  -moz-animation-name: transitionCard-4;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-duration: 0.4s;
+  -moz-animation-delay: 0.5s;
+  -moz-animation-fill-mode: forwards;
+
+  -webkit-animation-name: transitionCard-4;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 0.4s;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+
+  animation-name: transitionCard-4;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.4s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .card-5 {
   left: 231px;
   top: 399px;
+
+  -moz-animation-name: transitionCard-5;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-duration: 0.75s;
+
+  -webkit-animation-name: transitionCard-5;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 0.75s;
+
+  animation-name: transitionCard-5;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.75s;
 }
 
 .card-6 {
   left: 231px;
   top: 798px;
+
+  -moz-animation-name: transitionCard-6;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-duration: 0.75s;
+
+  -webkit-animation-name: transitionCard-6;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 0.75s;
+
+  animation-name: transitionCard-6;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.75s;
 }
 
 .card-7 {
   left: 462px;
-  top: 688px;
+  top: 1088px;
+
+  -moz-animation-name: transitionCard-7;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-duration: 0.4s;
+  -moz-animation-delay: 0.5s;
+  -moz-animation-fill-mode: forwards;
+
+  -webkit-animation-name: transitionCard-7;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 0.4s;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+
+  animation-name: transitionCard-7;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.4s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .card-8 {
-  left: -231px;
+  left: -350px;
   top: 378px;
+
+  -moz-animation-name: transitionCard-8;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-duration: 0.4s;
+  -moz-animation-delay: 0.5s;
+  -moz-animation-fill-mode: forwards;
+
+
+  -webkit-animation-name: transitionCard-8;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 0.4s;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+
+  animation-name: transitionCard-8;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.4s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+
 }
 
 @media screen and (min-width: 64em) {
@@ -178,8 +391,8 @@ a {
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
   margin-top: 2rem;
   margin-bottom: 1rem;
-  font-weight: normal;
-  color: #159957; }
+  font-weight: bold;
+  color: #926AF9; }
 .main-content p {
   margin-bottom: 1em; }
 .main-content code {
@@ -272,7 +485,7 @@ a {
 
 @media screen and (min-width: 64em) {
   .main-content {
-    padding: 2rem 6rem;
+    padding: 4rem 26rem;
     margin: 0 auto;
     position: relative;
     background-color: white;
@@ -291,6 +504,28 @@ a {
     position: relative;
     background-color: white;
     font-size: 1rem; } }
+
+    @media screen and (min-width: 64em) {
+      .footer-content {
+        padding: 0rem 6rem 2rem;
+        margin: 0 auto;
+        position: relative;
+        background-color: white;
+        font-size: 1.1rem; } }
+
+    @media screen and (min-width: 42em) and (max-width: 64em) {
+      .footer-content {
+        padding: 2rem 4rem;
+        position: relative;
+        background-color: white;
+        font-size: 1.1rem; } }
+
+    @media screen and (max-width: 42em) {
+      .footer-content {
+        padding: 2rem 1rem;
+        position: relative;
+        background-color: white;
+        font-size: 1rem; } }
 
 .site-footer {
   padding-top: 2rem;
@@ -315,3 +550,261 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+
+@-moz-keyframes headerTransition {
+  0% {
+    -moz-transform: translateX(260px);
+    opacity: 0;
+  }
+  100% {
+    -moz-transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes headerTransition {
+  0% {
+    -webkit-transform: translateX(260px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes headerTransition {
+  0% {
+    transform: translateX(260px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes shareTransition {
+  0% {
+    -moz-transform: translateY(0);
+  }
+  100% {
+    -moz-transform: translateY(80px);
+  }
+}
+@-webkit-keyframes shareTransition {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(80px);
+  }
+}
+@keyframes shareTransition {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(80px);
+  }
+}
+
+@-moz-keyframes transitionCard-1 {
+  0% {
+    -moz-transform: translateY(-260px);
+  }
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+@-webkit-keyframes transitionCard-1 {
+  0% {
+    -webkit-transform: translateY(-260px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes transitionCard-1 {
+  0% {
+    transform: translateY(-260px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@-moz-keyframes transitionCard-2 {
+  0% {
+    -moz-transform: translateX(-660px);
+  }
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
+@-webkit-keyframes transitionCard-2 {
+  0% {
+    -webkit-transform: translateX(-660px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+@keyframes transitionCard-2 {
+  0% {
+    transform: translateX(-660px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes transitionCard-3 {
+  0% {
+    -moz-transform: translateY(660px);
+  }
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+@-webkit-keyframes transitionCard-3 {
+  0% {
+    -webkit-transform: translateY(660px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes transitionCard-3 {
+  0% {
+    transform: translateY(660px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@-moz-keyframes transitionCard-4 {
+  0% {
+    -moz-transform: translateY(0);
+  }
+  100% {
+    -moz-transform: translateY(250px);
+  }
+}
+@-webkit-keyframes transitionCard-4 {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(250px);
+  }
+}
+@keyframes transitionCard-4 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(250px);
+  }
+}
+
+@-moz-keyframes transitionCard-5 {
+  0% {
+    -moz-transform: translateY(-660px);
+  }
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+@-webkit-keyframes transitionCard-5 {
+  0% {
+    -webkit-transform: translateY(-660px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes transitionCard-5 {
+  0% {
+    transform: translateY(-660px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@-moz-keyframes transitionCard-6 {
+  0% {
+    -moz-transform: translateY(660px);
+  }
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+@-webkit-keyframes transitionCard-6 {
+  0% {
+    -webkit-transform: translateY(660px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes transitionCard-6 {
+  0% {
+    transform: translateY(660px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@-moz-keyframes transitionCard-7 {
+  0% {
+    -moz-transform: translateY(0);
+  }
+  100% {
+    -moz-transform: translateY(-400px);
+  }
+}
+@-webkit-keyframes transitionCard-7 {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-400px);
+  }
+}
+@keyframes transitionCard-7 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-400px);
+  }
+}
+
+@-moz-keyframes transitionCard-8 {
+  0% {
+    -moz-transform: translateX(0);
+  }
+  100% {
+    -moz-transform: translateX(119px);
+  }
+}
+@-webkit-keyframes transitionCard-8 {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(119px);
+  }
+}
+@keyframes transitionCard-8 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(119px);
+  }
+}

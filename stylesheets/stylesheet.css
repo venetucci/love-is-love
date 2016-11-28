@@ -74,6 +74,7 @@ a[ id= "request" ]:target ~ #about main-content.project {
 
 .share a:hover {
   background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
 }
 
 .share-tweet {
@@ -516,7 +517,7 @@ a[ id= "request" ]:target ~ #about main-content.project {
 
 @media screen and (min-width: 64em) {
   .main-content {
-    padding: 4rem 26rem;
+    padding: 4rem 26rem 2rem;
     margin: 0 auto;
     position: relative;
     background-color: white;

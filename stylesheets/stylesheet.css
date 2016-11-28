@@ -11,11 +11,14 @@ body {
 
 a {
   color: #926af9;
-  text-decoration: none; }
-  a:hover {
+  text-decoration: none;
+}
+
+a:hover {
     text-decoration: none;
     background-color: #926af9;
-    color: white; }
+    color: white;
+}
 
 .header-content {
   position: absolute;
@@ -23,24 +26,13 @@ a {
   width: 50%;
   top: 36%;
 
-  -moz-animation-name: headerTransition;
-  -moz-animation-iteration-count: 1;
-  -moz-animation-timing-function: ease-in;
-  -moz-animation-duration: 0.7s;
-
-  -webkit-animation-name: headerTransition;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
-  -webkit-animation-duration: 0.7s;
-
-  animation-name: headerTransition;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 0.7s;
 }
 
-.share {
 
+a[ id= "request" ]:target ~ #about main-content.project {
+  -moz-transform: translateY( -500px );
+  -webkit-transform: translateY( -500px );
+  transform: translateY( -500px );
 }
 
 .share a {
@@ -313,12 +305,51 @@ a {
 
 @media screen and (min-width: 64em) {
   .btn {
-    padding: 0.75rem 1rem; } }
+    padding: 0.75rem 1rem; }
+
+  .header-content {
+
+      -moz-animation-name: headerTransition;
+      -moz-animation-iteration-count: 1;
+      -moz-animation-timing-function: ease-in;
+      -moz-animation-duration: 0.7s;
+
+      -webkit-animation-name: headerTransition;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-timing-function: ease-in;
+      -webkit-animation-duration: 0.7s;
+
+      animation-name: headerTransition;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 0.7s;
+  }
+
+  }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .btn {
     padding: 0.6rem 0.9rem;
-    font-size: 0.9rem; } }
+    font-size: 0.9rem; }
+  .header-content {
+
+        -moz-animation-name: headerTransition;
+        -moz-animation-iteration-count: 1;
+        -moz-animation-timing-function: ease-in;
+        -moz-animation-duration: 0.7s;
+
+        -webkit-animation-name: headerTransition;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-timing-function: ease-in;
+        -webkit-animation-duration: 0.7s;
+
+        animation-name: headerTransition;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 0.7s;
+    }
+
+  }
 
 @media screen and (max-width: 42em) {
   .btn {
@@ -489,7 +520,12 @@ a {
     margin: 0 auto;
     position: relative;
     background-color: white;
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; }
+
+    .card-group {
+      visibility: visible;
+    }
+}
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .main-content {
@@ -503,7 +539,51 @@ a {
     padding: 2rem 1rem;
     position: relative;
     background-color: white;
-    font-size: 1rem; } }
+    font-size: 1rem; }
+
+  .card-group {
+    visibility: hidden;
+  }
+
+  .card-group-mobile {
+    visibility: visible;
+  }
+
+  .share {
+    visibility: hidden;
+  }
+
+  .header-content {
+    right: inherit;
+    width: 89%;
+    top: 6%;
+  }
+
+  .card-mobile {
+    position: absolute;
+    top: 224px;
+    display: block;
+    margin-left: auto;
+    position: relative;
+    margin-right: auto;
+
+    -moz-animation-name: transitionCard-3;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 0.75s;
+
+    -webkit-animation-name: transitionCard-3;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 0.75s;
+
+    animation-name: transitionCard-3;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.75s;
+  }
+
+}
 
     @media screen and (min-width: 64em) {
       .footer-content {
@@ -511,21 +591,42 @@ a {
         margin: 0 auto;
         position: relative;
         background-color: white;
-        font-size: 1.1rem; } }
+        font-size: 1.1rem; }
+
+      .card-mobile {
+          visibility: hidden;
+      }
+
+      }
 
     @media screen and (min-width: 42em) and (max-width: 64em) {
       .footer-content {
         padding: 2rem 4rem;
         position: relative;
         background-color: white;
-        font-size: 1.1rem; } }
+        font-size: 1.1rem; }
+
+      .card-mobile {
+        visibility: hidden;
+      }
+      }
 
     @media screen and (max-width: 42em) {
       .footer-content {
         padding: 2rem 1rem;
         position: relative;
         background-color: white;
-        font-size: 1rem; } }
+        font-size: 1rem; }
+
+      .project-name {
+        text-align: center;
+      }
+
+      .project-tagline {
+        text-align: center;
+      }
+
+      }
 
 .site-footer {
   padding-top: 2rem;
@@ -806,5 +907,30 @@ a {
   }
   100% {
     transform: translateX(119px);
+  }
+}
+
+@-moz-keyframes card-mobile {
+  0% {
+    -moz-transform: translateY(160px);
+  }
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+@-webkit-keyframes card-mobile {
+  0% {
+    -webkit-transform: translateY(160px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes card-mobile {
+  0% {
+    transform: translateY(160px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

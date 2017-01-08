@@ -1172,36 +1172,20 @@ a[ id= "request" ]:target ~ #about main-content.project {
 
   .card-group {
     visibility: visible;
+    left: 24%;
+    top: -37%;
   }
 
   .card-10 {
-    display: none;
+
   }
 
   .card-11 {
-    display: none;
+
   }
 
   .card-12 {
-    display: none;
+
   }
 
-}
-
-@media screen and (min-width: 204em) {
-  .card-group {
-    left: 15%;
-  }
-
-  .card-10 {
-    display: block;
-  }
-
-  .card-11 {
-    display: block;
-  }
-
-  .card-12 {
-    display: block;
-  }
 }

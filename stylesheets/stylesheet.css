@@ -110,15 +110,6 @@ a[ id= "request" ]:target ~ #about main-content.project {
   cursor: pointer;
 }
 
-.card-group {
-  position: absolute;
-  top: -40%;
-  left: 25%;
-  -ms-transform: rotate(30deg);
-  -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
-  transform: rotate(30deg);
-}
-
 .card {
   width: 200px;
   height: auto;
@@ -1049,6 +1040,15 @@ a[ id= "request" ]:target ~ #about main-content.project {
     font-size: 0.9rem;
   }
 
+  .card-group {
+    position: absolute;
+    top: -40%;
+    left: 25%;
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+    transform: rotate(30deg);
+  }
+
   .header-content {
       -moz-animation-name: headerTransition;
       -moz-animation-iteration-count: 1;
@@ -1170,11 +1170,11 @@ a[ id= "request" ]:target ~ #about main-content.project {
     font-size: 1.1rem;
   }
 
-  .card-group {
+  /*.card-group {
     visibility: visible;
     left: 24%;
     top: -37%;
-  }
+  }*/
 
   .card-10 {
 
@@ -1187,5 +1187,16 @@ a[ id= "request" ]:target ~ #about main-content.project {
   .card-12 {
 
   }
+
+  .card-group {
+    position: absolute;
+    top: -40%;
+    left: 16%;
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+    transform: rotate(30deg);
+    visibility: visible;
+  }
+
 
 }
